@@ -138,9 +138,9 @@ run;quit;
   %let rc=%qsysfunc(dosubl(&arg));
 %mend dosubl;
 
-%macro dosubl(arg)/des="simplify macro calls to sysget";
+%macro sysget(arg)/des="simplify macro calls to sysget";
   %let rc=%qsysfunc(sysget(&arg));
-%mend dosubl;
+%mend sysget;
 
 /*   _                 _     _
   __| | ___  ___ _   _| |__ | |  _ __ ___ _ __   ___  ___
